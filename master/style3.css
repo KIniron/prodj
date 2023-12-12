@@ -1,0 +1,365 @@
+body{
+    margin: 0;
+	font-family: 'Montserrat', sans-serif;
+	background: url("") center
+        no-repeat;
+    -webkit-background-size:cover;
+    background-size: cover; 
+	font-size: 15px;
+	line-height: 1.6;
+	color: #333;
+    background-color: #0b212c ;
+}
+*,
+*before,
+*after{
+ box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+/*container*/
+.container{
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+    
+     
+}
+
+/*intro*/
+.intro{
+    background-color: #0b212c ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:100%;
+    height:100vh;
+    background: url("img/fon1.jpg") center
+        no-repeat;
+    -webkit-background-size:cover;
+    background-size: cover;     
+}
+
+
+.intro__inner{
+    background-color: darkslategrey;
+    width: 100%;
+    max-width: 880px;
+    margin: 0 auto;
+    
+    
+    text-align: center;
+    }
+.intro__title{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+     font-family: 'Kaushan Script', cursive;
+}
+  .look-calendar {
+    width:240px; border:3px solid #cbcccc; padding:5px; 
+    background-color:#1c1d1b; margin: 0 auto;   
+  }
+  #calendar {
+    width: 100%;
+    line-height: 1.2em;
+    font-size: 14px;
+    text-align: center;
+    border-spacing:0px;
+    color: #cff8e4;
+       text-decoration: none;
+  }
+  #calendar tr.dn td {
+    color: #cff8e4;
+       text-decoration: none;
+  }
+  #calendar thead tr:last-child {
+    font-size: small;
+    color: #555555;
+       text-decoration: none;
+  }
+  #calendar thead tr:nth-child(1) td:nth-child(2) {
+    color: #323232;
+    font-size: 18px;
+       text-decoration: none;
+  }
+  #calendar thead tr:nth-child(1) td:nth-child(1):hover,
+  #calendar thead tr:nth-child(1) td:nth-child(3):hover {
+    cursor: pointer;
+       text-decoration: none;
+  }
+  #calendar tbody td {
+    color: #69b0ee;
+       text-decoration: none;
+  }
+  #calendar tbody td:nth-child(n+6),
+  #calendar .holiday {
+    color: #e78c5c;
+       text-decoration: none;
+  }
+  #calendar tbody td.today {
+    background: #0051a8;
+    color: #fff;
+      text-decoration: none; 
+  }
+
+.leftcol{
+    width: 110px;
+    color: #fff;
+}
+
+ 
+.color{
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Kaushan Script', cursive;
+}
+
+
+/*header*/
+.header{
+    padding-top: 8px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    
+}
+.header--fixed{
+    padding: 8px 0;
+    box-shadow: 0 5px 10px rgba(0,0,0,.3);
+    background-color: #191919;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    transform: translate3d(0,0,0);
+}
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__logo{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+}
+/*nav*/
+.nav{
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.nav__link{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 8px;
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    transition: color .1s linear;
+}
+.nav__link:after{
+   content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #fce38a;
+    position: absolute;
+    top: 100%;
+    left:0;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity .1s linear;
+}
+.nav__link:hover{
+    color: #fce38a;
+    
+}
+.nav__link:hover:after{
+    opacity: 1;
+}
+
+/*Button*/
+.btn{
+    vertical-align: top;
+    border: .2px solid #fff;
+    padding: 4px 10px;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+    
+    
+}
+.gf{
+    font-family: 'Kaushan Script', cursive;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn:hover{
+background-color: #191919;
+    color: #fff;*    
+} 
+
+/*slider*/
+.slider{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    
+}
+.slider__inner{
+     display: flex;
+  justify-content: space-between;
+    
+}
+
+.slider__item{
+    width: 22%;
+    padding: 20px 0;
+    position: relative;
+    opacity: .7;
+    border-top: 3px solid #fff;
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+}
+ .slider__item.active {
+    opacity: 1;
+}
+.slider__item.active:before{
+    content: "";
+    display: block;
+    width: 70px;
+    height: 3px;
+    background-color: #f39743;
+    position: absolute;
+    top: -3px;
+    left: 0;
+    z-index: 1;   
+}
+.slider__num{
+    font-size: 20px;
+    font-weight: 700;
+}
+/*section*/
+.section{
+    padding: 80px 0;
+        
+    
+}
+.section__header{
+    width: 100%;
+    max-width: 950px;    
+    margin: 0 auto 40px;
+    text-align: center;
+}
+.section__suptitle{
+  font-family: 'Kaushan Script', cursive;
+  font-size: 24px;
+  color: black;
+  
+}
+.section__title{
+    font-size: 30px;
+    font-weight: 700;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.section__title:after{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin: 30px auto ;
+    background-color: blueviolet;
+}
+
+.section__text{
+    font-size: 15px;
+    color: #999;
+}
+
+/*About*/
+
+.about{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+       
+      
+}
+.about__item{
+   border: .2px solid #000;
+    border-left: .2px solid #000;
+}
+
+/*statistics*/
+.statistics{
+   display: flex;
+
+    justify-content: center;
+    background-color: cadetblue;
+    background-size: cover;   
+}
+.stat{
+    display: flex;
+    
+}
+.stat__item{
+    flex: 1 1 0;
+    text-align:  center;
+    border-left: 4px solid #b5eae0; 
+    color: #fff;
+    padding: 70px ;
+}
+.stat__item:last-child{
+     border-right: 4px solid #b5eae0;
+}
+.stat__count{
+    margin-bottom: 10px;
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 1;
+}
+.stat__text{
+ font-size: 15px;
+    text-transform: uppercase;
+}
+@media(max-width:990px){ 
+    .intro__suptitle{
+        font-size: 32px;
+    }
+    .intro__title{
+        font-size: 80px;
+    }
+    .stat{
+        justify-content: center;
+    }
+    .stat__item{
+        width: 33.33333%l;
+        flex: none;
+            
+    }
+}
+@media(max-width:770px){ 
+    .nav {
+        display: none;
+    }
+    .section{
+        padding: 40px 0;
+    }
+}

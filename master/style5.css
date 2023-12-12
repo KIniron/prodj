@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+@import url("https://use.fontawesome.com/releases/v6.4.2/css/all.css");
+body {
+    display: flex;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #0b212c;
+    -webkit-background-size: cover;
+    background-size: cover;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+*,
+*before,
+*after{
+box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+/*container*/
+.container{
+	width: 90%;
+	max-width: 1200px;
+    margin: 0 auto;
+     
+}
+/*header*/
+.header{
+    padding-top: 8px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    
+}
+.header--fixed{
+    padding: 8px 0;
+    box-shadow: 0 5px 10px rgba(0,0,0,.3);
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    transform: translate3d(0,0,0);
+}
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__logo{
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+}
+/*nav*/
+.nav {
+    display: flex;
+}
+
+.nav__link {
+    font-family: 'Kaushan Script', cursive;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 8px;
+    position: relative;
+    color: #000;
+    text-decoration: none;
+    transition: color 0.1s linear;
+}
+
+.nav__link:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #fce38a;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.1s linear;
+}
+
+.nav__link:hover {
+    color: #fce38a;
+}
+
+.nav__link:hover:after {
+    opacity: 1;
+}
+
+.center-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    padding: 8px;
+    margin-right: 10px;
+}
+
+.search-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.right-container {
+    display: flex;
+    align-items: center;
+}
+
+.login-button {
+    font-family: 'Kaushan Script', cursive;
+    text-decoration: none;
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    margin-right: 13px;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover,
+.search-button:hover {
+    background-color: #fce38a;
+}
+.reg-button{
+    font-family: 'Kaushan Script', cursive;
+    text-decoration: none;
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.reg-button:hover,
+.search-button:hover {
+    background-color: #fce38a;
+}
+
+/*Button*/
+.btn{
+    vertical-align: top;
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.btn:hover{
+    background-color: #fce38a;
+}
+.gf{
+    font-family: 'Kaushan Script', cursive;
+    text-decoration: none;
+    color: #000;
+}
+.test__w{
+     margin-bottom: 15px;
+    font-size: 35px;
+    color: #fff;
+    font-family: 'Kaushan Script', cursive;
+    
+}
+.reg-container {
+    font-family: 'Kaushan Script', cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: auto;
+    position: relative;
+    background-color: #f8f8f8; 
+    border-radius: 8px; 
+    padding: 20px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.reg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.center-container {
+    text-align: center; 
+}
+.center-container1 {
+    text-align: center; 
+}
+.item{
+    font-family: 'Poppins', cursive;
+    display: inline-block;
+    
+    margin: 0 8px;
+    position: relative;
+    color: #000;
+    text-decoration: none;
+    transition: color 0.1s linear;
+    text-align: center; 
+}
+.item:after{
+content: "";
+  display: block;
+  width: 100%;
+  
+  background-color: #6ee016;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  opacity: 0;
+  transition: color 0.1s linear;
+}
+.item:hover{
+    color: #6ee016;
+}
+.item:hover:after {
+    opacity: 1;
+  }
+  .login-container {
+    font-family: 'Kaushan Script', cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 330px;
+    height: 310px;
+    position: relative;
+    background-color: #f8f8f8; 
+    border-radius: 8px; 
+    padding: 20px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-top: 20px;
+}
+
+.center-container,
+.center-container1 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+label {
+    margin-bottom: 5px;
+    color: #555; 
+}
+
+input[type="text"],
+input[type="email"],
+input[type="pass"] {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc; 
+    border-radius: 4px;
+}
